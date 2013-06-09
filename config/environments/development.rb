@@ -34,4 +34,13 @@ SampleApp::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  
+  # Load Pry instead of Rails console/irb
+  #silence_warnings do
+  #      begin
+  #          require 'pry'
+  #          IRB = Pry
+  #      rescue LoadError
+  #      end
+  #  end
 end
